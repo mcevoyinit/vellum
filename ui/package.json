@@ -1,0 +1,43 @@
+{
+  "name": "@vellum/ui",
+  "version": "0.1.0",
+  "description": "Domain-agnostic UI SDK for multi-party negotiation, schema-driven forms, tables, and enterprise settlement workflows",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./core": "./src/core/index.ts",
+    "./schema": "./src/schema/index.ts",
+    "./negotiation": "./src/negotiation/index.ts",
+    "./forms": "./src/forms/index.ts",
+    "./tables": "./src/tables/index.ts",
+    "./seal": "./src/seal/index.ts",
+    "./agentic": "./src/agentic/index.ts",
+    "./settings": "./src/settings/index.ts",
+    "./auth": "./src/auth/index.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "@emotion/react": ">=11.0.0",
+    "@emotion/styled": ">=11.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "vitest": "^1.0.0"
+  },
+  "license": "MIT"
+}
